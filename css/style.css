@@ -298,6 +298,13 @@ input[type="radio"]:checked + label:after {
 
 .welcome__content {
   padding: 2.4em 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .welcome__title {
@@ -318,6 +325,11 @@ input[type="radio"]:checked + label:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .welcome__bg {
